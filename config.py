@@ -1,5 +1,5 @@
 # ضع توكن البوت هنا
-BOT_TOKEN = "7135908560:AAEcDzsmWjlhOUKcT1u7WjRJLWeIm5TGA2A"
+BOT_TOKEN = "7135908560:AAG9SlFOEf55XRdNyz9qKwAfTKliNpUuBjQ"
 
 # إعدادات أخرى
 MAX_QUESTIONS = 50
