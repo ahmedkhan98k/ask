@@ -1,0 +1,26 @@
+name: Deploy Exam Bot
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install python-telegram-bot
+        
+    - name: Test syntax
+      run: |
+        python -m py_compile professional_bot.py
+        echo "✅ الكود صحيح النحو"
